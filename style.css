@@ -1,0 +1,284 @@
+.plane{
+    width: 200px;
+    margin-top: 420px;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.scoreImage{
+    position: absolute;
+    width: 350px;
+    margin-left: 1025px;
+}
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(background.png);
+    background-size: cover;
+    position: absolute;
+    background-repeat: repeat-x;
+    overflow-x: hidden;
+}
+
+.body{
+    margin: 0px;
+}
+
+.missile{
+    background-image: url(missile.gif);
+    position: absolute;
+    background-size: cover;
+    height: 140px;
+    width: 150px;
+    transform: rotate(225deg);
+    visibility: visible;
+}
+
+.missileDistroyed{
+    background-image: url(boom.gif);
+    position: absolute;
+    background-size: cover;
+    height: 140px;
+    width: 150px;
+    transform: rotate(225deg);
+    visibility: visible;
+
+}
+
+.damaged{
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.2;
+    visibility: hidden;
+    position: absolute;
+}
+
+.bullet{
+    position: absolute;
+    background-image: url(Bullet.png);
+    background-size: cover;
+    height: 70px;
+    width: 65px;
+}
+
+.healthBarImage{
+    position: absolute;
+    width: 400px;
+}
+
+.healthBar{
+    margin-top: 17px;
+    margin-left: 30px;
+    position: absolute;
+}
+.heart{
+    width: 70px;
+    height: 70px;
+    background-image: url(hart.png);
+    background-size: cover;
+    float: left;
+    
+}
+
+.startPageMissileImage{
+    width: 400px;
+    rotate: 225deg;
+    margin-top: 100px;
+    margin-left: 900px;
+}
+
+
+.startPagePlaneImage{
+    position: absolute;
+    width: 400px;
+    margin-top: 300px;
+    margin-left: 50px;
+}
+
+.score{
+    font-size: 53px;
+    font-weight: bolder;
+    margin-left: 88%;
+    margin-top: 20px;
+    color: aliceblue;
+    position: absolute;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.startPage{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(background.png);
+    background-size: cover;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.play{
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    margin-top: 250px;
+    position: absolute;
+    margin-left: 550px;
+}
+
+.help{
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    margin-top: 370px;
+    margin-left: 950px;
+    position: absolute;
+
+}
+
+.playImage{
+    height: 250px;
+}
+.helpImage{
+    height: 175px;
+}
+
+.helpPage{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    flex-direction: column;
+}
+
+.helpPageImage{
+    width: 500px;
+}
+
+.helpPageButton{
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    margin-top: 195px;
+    background-color: rgb(112, 218, 7);
+    border-radius: 11px;
+    font-size: 25px;
+    font-weight: bold;
+    border-color: burlywood;
+    cursor: pointer;
+}
+
+.logo{
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 50px;
+    height: 120px;
+    margin-left: 190px;
+}
+
+.heal{
+    background-image: url(hart.png);
+    height: 90px;
+    width: 90px;
+    background-size: cover;
+    position: absolute;
+}
+
+.healed{
+    visibility: hidden;
+    position: absolute;
+}
+
+.gameOver{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+    background-image: url(background.png);
+
+}
+
+.gameOverCover{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: red;
+    opacity: 0.1;
+}
+.gameOverTheme{
+    position: absolute;
+    margin-left: 150px;
+    height: 200px;
+}
+
+.gameOverDeadImage{
+    margin-top: 320px;
+    height: 260px;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.gameOverButton{
+    width: 250px;
+    height: 70px;
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 580px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 25px;
+    background-color: rgb(4, 31, 82);
+    border-radius: 10px;
+    border-style: none;
+    color: aliceblue;
+}
+
+.gameOverScoreLable{
+    font-size: 55px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 450px;
+    margin-left: 750px;
+    color: aquamarine;
+    position: absolute;
+}
+
+.pauseButton{
+    position: absolute;
+    background-color: inherit;
+    border-style: none;
+    cursor: pointer;
+    margin-left: 93%;
+    margin-top: 80px;
+}
+
+.pauseImage{
+    width: 80px;
+}
+
+.gameOverscore{
+    font-size: 55px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 455px;
+    margin-left: 1050px;
+    position: absolute;
+    color: aqua;
+}
+
+.gameOverScoreBack{
+    height: 130px;
+    width: 600px;
+    margin-top: 422px;
+    margin-left: 680px;
+}
+
+.gameOverMissile{
+    position: absolute;
+}

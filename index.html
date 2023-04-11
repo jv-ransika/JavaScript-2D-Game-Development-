@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Plane VS Missiles</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="body" onkeydown="keyDownCheck(event);" onkeyup="keyUpCheck(event);">
+    <div id="background" class="background">
+        <img src="healthbar.png" class="healthBarImage">
+        <div id="healthBar" class="healthBar">
+        </div>
+        <img src="scoreImage.png" class="scoreImage">
+        <div id="score" class="score">0</div>
+        <div id="damaged" class="damaged"></div>
+        <img id="plane" src="Fly (1).png" class="plane" />
+        <div id="startPage" class="startPage">
+            <img src="logo.png" class="logo"/>
+            <img src="Fly (1).png" class="startPagePlaneImage">
+            <img src="missile.gif" class="startPageMissileImage">
+            <button class="play" onclick="playButton();">
+                <img class="playImage" src="Button.png" alt="">
+            </button>
+            <button class="help" onclick="helpButton();">
+                <img class="helpImage" src="help.png" alt="">
+            </button>
+        </div>
+        <div class="helpPage" id="helpPage">
+            <img src="helpPage.png" alt="" class="helpPageImage">
+            <button onclick="helpBack();" class="helpPageButton">Back</button>
+        </div>
+        <div id="gameOver" class="gameOver">
+            <div class="gameOverCover"></div>
+            <img class="gameOverTheme" src="gameOver.png" alt="">
+            <img class="gameOverDeadImage" src="Dead (1).png" alt="">
+            <button onclick="tryAgain();" class="gameOverButton">Try Again</button>
+            <div class="gameOverScoreLable">Your Score : </div>
+            <div id="gameOverscore" class="gameOverscore">0</div>
+            <img class="startPageMissileImage gameOverMissile" src="missile.gif" alt="">
+            <img  class="gameOverScoreBack" src="healthbar.png" alt="">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
